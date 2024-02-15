@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillTest1</title>
+     <!-- Font Awesome Icons -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@500&display=swap"
+  rel="stylesheet"
+/>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box1" >
+            00:00:00AM
+
+        </div>
+        <div class="box2">
+            <div class="inputs">
+                <form>
+                  <div >
+                    <input
+                    id="hourInput"
+                      type="number"
+                      name="hour"
+                      placeholder="00"
+                      min="0"
+                      max="12"
+                      
+                    />
+                    <lable>:</lable>  
+                    <input
+                    id="minuteInput"
+                      type="number"
+                      name="min"
+                      min="0"
+                      max="60"
+                      placeholder="00"
+                      
+                    />
+                    <lable>:</lable> 
+                    <input
+                    id="secInput"
+                      type="number"
+                      name="sec"
+                      min="0"
+                      max="60"
+                      placeholder="00"
+                      
+                    />
+                    <select id="amPmSelect" name="AM" required>
+                      <option value="AM" >AM</option>
+                      <option value="PM">PM</option>
+                    </select>
+                  </div>
+                  
+                </form>
+              </div>
+            
+        </div>
+        <button id="set">Set Alarm</button>
+        <div class="activeAlarms"></div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
